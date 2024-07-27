@@ -1,5 +1,5 @@
 # Keypoint-Detection-Using-Movenet-Model
-MoveNet is a state-of-the-art model developed by Google for human pose detection, capable of identifying 17 keypoints on the human body. It is designed for real-time applications, offering two variants: Lightning and Thunder. The Lightning model is optimized for low-latency scenarios, while Thunder is tailored for high-accuracy tasks. Both models can achieve over 30 frames per second, making them suitable for live applications such as fitness tracking and sports analytics[1][2][3].
+MoveNet is a state-of-the-art model developed by Google for human pose detection, capable of identifying 17 keypoints on the human body. It is designed for real-time applications, offering two variants: Lightning and Thunder. The Lightning model is optimized for low-latency scenarios, while Thunder is tailored for high-accuracy tasks. Both models can achieve over 30 frames per second, making them suitable for live applications such as fitness tracking and sports analytics.
 
 ### Architecture and Functionality
 
@@ -25,13 +25,9 @@ MoveNet is versatile and can be applied in various fields, including:
 
 ### Implementation
 
-To implement MoveNet for pose detection, TensorFlow.js can be used, allowing the model to run directly in the browser without additional server calls. This makes it accessible for developers looking to incorporate pose estimation into web applications[1][3][5].
+To implement MoveNet for pose detection, TensorFlow.js has been used in the given colab notebook for ease of running.
 
-Overall, MoveNet represents a significant advancement in pose detection technology, balancing speed and accuracy for a wide range of applications.
+### Dataset used 
+The VITON-HD (High-Resolution VITON-Zalando Dataset) is a dataset for high-resolution (1024x768) virtual try-on of clothing items. It consists of 13,679 frontal-view woman and top clothing image pairs. The model has been trained on this dataset.
 
-Citations:
-[1] https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html
-[2] https://www.iieta.org/journals/ria/paper/10.18280/ria.370511
-[3] https://www.geeksforgeeks.org/human-pose-detection-using-movenet-with-tensorflowhub/
-[4] https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/g3doc/tutorials/pose_classification.ipynb
-[5] https://github.com/tensorflow/tfjs-models/blob/master/pose-detection/README.md
+VITON-HD was introduced in the CVPR 2021 paper "VITON-HD: High-Resolution Virtual Try-On via Misalignment-Aware Normalization". The authors proposed a novel virtual try-on method called VITON-HD that successfully synthesizes 1024x768 virtual try-on images by handling misaligned areas and preserving input details.
